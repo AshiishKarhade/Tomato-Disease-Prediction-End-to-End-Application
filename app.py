@@ -64,5 +64,7 @@ def upload():
         return "This tomato is likely to have disease {} with {}% of confidence".format(class_name, preds['confidence'])
     return None
 
-# if __name__ == "__main__":
-#     app.run(debug=True)
+if __name__ == "__main__":
+    #app.run(debug=True)
+    app.debug =true;
+    app.run(host="0.0.0.0", port="8080")
